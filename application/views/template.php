@@ -48,6 +48,9 @@ $affiliation = $this -> session -> userdata('affiliation');
 		</header>
 
 		<section class="current-body">
+			<nav id="admin">
+	
+</nav>
 			<?php 
 			if($content=="Vehicles"){
 				?>
@@ -288,6 +291,7 @@ $affiliation = $this -> session -> userdata('affiliation');
 	break;}
 	?>
 </section><!-- End of Menu-Container -->
+
 			<section class="form-container">
 				<?php
 				echo $form;
@@ -304,12 +308,14 @@ $affiliation = $this -> session -> userdata('affiliation');
 		</section><!-- End of Form-SideBar -->
 		<?php
 		}
-		
+
 		if($content=="Reports"){
 			?>
 			<script>
 	
-   $(function () {
+
+  $(function () {
+
         $('#container').highcharts({
             chart: {
                 type: 'bar'
@@ -318,8 +324,10 @@ $affiliation = $this -> session -> userdata('affiliation');
                 text: 'Stacked bar chart'
             },
             xAxis: {
-                categories: ['ONE', 'TWO', 'THREE']
-            },
+               categories: <?php echo $seriesdata[0]?>
+
+                },
+
             yAxis: {
                 min: 0,
                 title: {
@@ -335,10 +343,10 @@ $affiliation = $this -> session -> userdata('affiliation');
                     stacking: 'normal'
                 }
             },
-                series: [{"name":"VIJIWENI","data":[51,52,36]},{"name":"VIJIWENI","data":[51,52,36]},{"name":"VUMALE","data":[51,52,36]},{"name":"VUMALE","data":[51,52,36]},{"name":"VUMALE","data":[51,52,36]},{"name":"WALDA NOMADIC","data":[51,52,36]},{"name":"WALDA NOMADIC","data":[51,52,36]},{"name":"WALDA NOMADIC","data":[51,52,36]},{"name":"WEBUYE TOWNSHIP","data":[51,52,36]},{"name":"WEBUYE TOWNSHIP","data":[51,52,36]},{"name":"WEBUYE TOWNSHIP","data":[51,52,36]},{"name":"YUMBANI","data":[51,52,36]},{"name":"YUMBANI","data":[51,52,36]},{"name":"YUMBANI","data":[51,52,36]}]
-        });
-    });
-    
+
+                 series: <?php echo $seriesdata[1]; ?>
+					});
+					});
 
 	</script>
 			<section class="menu-container">
@@ -352,8 +360,42 @@ $affiliation = $this -> session -> userdata('affiliation');
 			</section><!-- End of Form-Container Section-->
 			
 			<?php
-			
-		}
+
+
+			}
+			if($content=='datatable'){
+	?>
+	<section class="form-container">
+		<table id="datatables" class="display">
+		<thead>
+			<tr>
+				<th>sugar_externalfortB3ID</th>
+				<th>factoryName</th>
+				<th>dates</th>
+				<th>suggestionsForImprovement</th>
+				<th>affiliation</th>
+
+			</tr>
+			</thead>
+
+                            <?php
+                        foreach ($table as $value) { ?>
+<tr>
+    
+<td><?php echo $value['sugar_externalfortB3ID']; ?></td>
+<td><?php echo $value['factoryName']; ?></td>
+<td><?php echo $value['dates']; ?></td>
+<td><?php echo $value['suggestionsForImprovement']; ?></td>
+<td><?php echo $value['supervisorName']; ?></td>
+</tr>
+
+    <?php } ?>
+</table>
+		
+	</section>
+	<?php
+	}
+
 			?>
 			
 		</section>
