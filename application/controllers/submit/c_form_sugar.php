@@ -14,11 +14,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalFort_A1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_A1 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_A1 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalFort_A1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -32,11 +33,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalFort_B1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_B1 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_B1 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalFort_B1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -48,11 +50,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalFort_C1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_C1 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_C1 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalFort_C1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -66,11 +69,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalFort_C2 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_C2 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_C2 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalFort_C2 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -83,11 +87,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalFort_C3 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_C3 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_C3 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalFort_C3 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -101,11 +106,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalFort_D1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_D1 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalFort_D1 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalFort_D1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -119,11 +125,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_ExternalFort_B1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_ExternalFort_B1 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_ExternalFort_B1 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_ExternalFort_B1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -137,11 +144,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_ExternalFort_B2 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_ExternalFort_B2 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_ExternalFort_B2 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_ExternalFort_B2 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -155,11 +163,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_ExternalFort_B3 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_ExternalFort_B3 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_ExternalFort_B3 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_ExternalFort_B3 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -174,11 +183,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalQC_A1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalQC_A1 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalQC_A1 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalQC_A1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -192,11 +202,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalQC_B1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalQC_B1 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalQC_B1 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalQC_B1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -210,11 +221,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalQC_B2 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalQC_B2 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalQC_B2 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalQC_B2 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -228,11 +240,12 @@ class C_Form_Sugar extends MY_Controller {
 
 		if ($this -> M_Sugar_InternalQC_C1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Sugar_InternalQC_C1 -> rowsInserted . '</b> records were inserted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Sugar_InternalQC_C1 -> rowsInserted . '</b> records were inserted successfully in 
 			approximately <b>' . $this -> M_Sugar_InternalQC_C1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure

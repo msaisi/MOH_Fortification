@@ -14,11 +14,12 @@ class C_Form_Oil extends MY_Controller {
 
 		if ($this -> M_Oil_FortifiedA1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Oil_FortifiedA1 -> rowsInserted . '</b> record(s) submitted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Oil_FortifiedA1 -> rowsInserted . '</b> record(s) submitted successfully in 
 			approximately <b>' . $this -> M_Oil_FortifiedA1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -32,11 +33,12 @@ class C_Form_Oil extends MY_Controller {
 
 		if ($this -> M_Oil_FortifiedB1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Oil_FortifiedB1 -> rowsInserted . '</b> record(s) submitted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Oil_FortifiedB1 -> rowsInserted . '</b> record(s) submitted successfully in 
 			approximately <b>' . $this -> M_Oil_FortifiedB1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -50,11 +52,12 @@ class C_Form_Oil extends MY_Controller {
 
 		if ($this -> M_Oil_FortifiedB2 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Oil_FortifiedB2 -> rowsInserted . '</b> record(s) submitted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Oil_FortifiedB2 -> rowsInserted . '</b> record(s) submitted successfully in 
 			approximately <b>' . $this -> M_Oil_FortifiedB2 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure
@@ -68,11 +71,12 @@ class C_Form_Oil extends MY_Controller {
 
 		if ($this -> M_Oil_FortifiedC1 -> response = 'ok') {
 			//notify user of success
-			$data['form_id'] = "";
-			$data['form'] = '<p><b>' . $this -> M_Oil_FortifiedC1 -> rowsInserted . '</b> record(s) submitted successfully in 
+			$this->$data['form_id'] = "";
+			$this->$data['form'] = '<p><b>' . $this -> M_Oil_FortifiedC1 -> rowsInserted . '</b> record(s) submitted successfully in 
 			approximately <b>' . $this -> M_Oil_FortifiedC1 -> executionTime . '</b> seconds.</p>';
 			//redirect(base_url() . 'front/vehicles/index', 'location');
-			$this -> load -> view('pages/vehicles/index', $data);
+			//$this -> load -> view('pages/vehicles/index', $data);
+			$this->load_template_view();
 
 		} else {
 			//notify user of error/failure

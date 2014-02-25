@@ -80,14 +80,11 @@ function __construct()  {
 		return true;
 	}
 
-   public function load_template_view(){
+   public function load_template_view($my_data=array()){
    	        $this->data['page']='Front-End';
 			$this->data['content'] = 'Vehicles';
-			$this->data['title']='Vehicles';
-			$this -> load -> view('template', $this->data);
+			$this->data['title']='Vehicles';			
+			$this -> load -> view('template_loggedin', $this->data);
    }
-
-   
-
 
 }  

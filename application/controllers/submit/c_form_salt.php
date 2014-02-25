@@ -8,19 +8,17 @@ class C_Form_Salt extends MY_Controller{
 	
 	public function form_internalFort_A1(){
 		$this->load->model('models_salt/M_InternalFortifiedA1');
-		$this->M_InternalFortifiedA1->addRecord();
-		
-		if($this->M_InternalFortifiedA1->response='ok'){
+		$this->M_InternalFortifiedA1->addRecord();		
+		if($this->M_InternalFortifiedA1->response='ok')
+		{
 			//notify user of success
 			$this->data['form_id']="";
 			$this->data['status'] = "ok";
 			$this->data['form']='<p><b>'.$this->M_InternalFortifiedA1->rowsInserted.'</b> record(s) submitted successfully in 
 			approximately <b>'.$this->M_InternalFortifiedA1->executionTime.'</b> seconds.</p>';
-			//redirect(base_url() . 'c_front/vehicles/index', 'location')
-			$this->load_template_view();
-			
-			
-		}else{
+			$this->load_template_view();			
+		}
+		else{
 			//notify user of error/failure
 		}
 		
@@ -35,11 +33,9 @@ class C_Form_Salt extends MY_Controller{
 			$this->data['form_id']="";
 			$this->data['form']='<p><b>'.$this->M_InternalFortifiedA2->rowsInserted.'</b> record(s) submitted successfully in 
 			approximately <b>'.$this->M_InternalFortifiedA2->executionTime.'</b> seconds.</p>';
-			//redirect(base_url() . 'c_front/vehicles/index', 'location');
-			$this->load_template_view();
-			
-			
-		}else{
+			$this->load_template_view();			
+		}
+		else{
 			//notify user of error/failure
 		}
 		
@@ -47,17 +43,14 @@ class C_Form_Salt extends MY_Controller{
 	}//close form_internalFort_A2()
 	
 	public function form_internalFort_B1(){
-		$this->load->model('models_salt/M_InternalFortifiedB1');
+     	$this->load->model('models_salt/M_InternalFortifiedB1');
 		$this->M_InternalFortifiedB1->addRecord($this->session->userdata('affiliation'));
 		
 		if($this->M_InternalFortifiedB1->response='ok'){
 			//notify user of success
 			$this->data['form_id']="";
-			$this->data['form']='<p><b>'.$this->M_InternalFortifiedB1->rowsInserted.'</b> record(s) submitted successfully in 
-			approximately <b>'.$this->M_InternalFortifiedB1->executionTime.'</b> seconds.</p>';
-			//redirect(base_url() . 'c_front/vehicles/index', 'location');
+			$this->data['form']='<p><b>'.$this->M_InternalFortifiedB1->rowsInserted.'</b> record(s) submitted successfully in approximately <b>'.$this->M_InternalFortifiedB1->executionTime.'</b> seconds.</p>';
 			$this->load_template_view();
-			
 			
 		}else{
 			//notify user of error/failure
@@ -210,7 +203,6 @@ class C_Form_Salt extends MY_Controller{
 			$this->data['form_id']="";
 			$this->data['form']='<p><b>'.$this->M_smallScaleA2->rowsInserted.'</b> record(s) submitted successfully in 
 			approximately <b>'.$this->M_smallScaleA2->executionTime.'</b> seconds.</p>';
-			//redirect(base_url() . 'c_front/vehicles/index', 'location');
 			$this->load_template_view();
 			
 			
